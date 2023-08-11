@@ -1,0 +1,41 @@
+sort1 uses: Bubble sort
+
+random5000 = 0.114s
+random10000 = 0.324s
+random50000 = 7.810s
+reversed5000 = 0.076s
+reversed10000 = 0.264s
+reversed50000 = 6.911s
+sorted5000 = 0.023s
+sorted10000 = 0.076s
+sorted50000 = 1.479s
+
+How do you know?: This algorithm worked fastest through the sorted arrays.
+
+sort2 uses: Merge sort
+
+random5000 = 0.047s
+random10000 = 0.046s
+random50000 = 1.578s
+reversed5000 = 0.52s
+reversed10000 = 0.059s
+reversed50000 = 1.467s
+sorted5000 = 0.043s
+sorted10000 = 0.041s
+sorted50000 = 1.152s
+
+How do you know?: This algorithm was fastest through the random number arrays.
+
+sort3 uses: Selection sort
+
+random5000 = 0.052s
+random10000 = 0.182s
+random50000 = 4.063s
+reversed5000 = 0.067s
+reversed10000 = 0.144s
+reversed50000 = 3.607s
+sorted5000 = 0.064s
+sorted10000 = 0.159s
+sorted50000 = 4.230s
+
+How do you know?: Similar time taken for different file sizes of different types. 
