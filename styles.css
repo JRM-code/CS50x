@@ -1,0 +1,138 @@
+
+/*INDEX*/
+
+.index-banner {
+    width: 100%;
+    height: calc(80vh);
+    background-image: url('img/ibanner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+  }
+
+.index-banner h1 {
+    font-family: Catamaran;
+    font-size: 70px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 100px;
+    color: #EDEDED;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+  }
+
+.index-banner h2 {
+    font-family: Catamaran;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+  }
+
+  /* About */
+h3 {
+  padding: 15px 150px 0px 15px;
+  }
+
+p {
+  text-align: justify;
+  padding: 15px;
+  }
+
+  /* Pie Gallery */
+
+.gallery {
+  height: 1000px;
+  width: 100%;
+}
+
+.gallery-img1 {
+    float: left;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    padding: 15px;
+}
+
+.gallery-img2 {
+   float: right;
+   width: 50%;
+   height: 50%;
+   object-fit: cover;
+   padding: 15px 15px 15px 0px;
+}
+
+.gallery-img3 {
+  float: right;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  padding: 0px 15px 15px 0px;
+}
+
+.gallery-img4 {
+  float: left;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  padding: 0px 15px 15px 15px;
+}
+
+/* Contact */
+
+.contact-links h3 {
+  padding: 15px 15px 0px 15px;
+  }
+
+.contact-links p {
+  font-family: Catamaran;
+  font-size: 30px;
+  font-weight: 80;
+  line-height: 20px;
+  color: #333;
+  text-align: left;
+}
+
+/* Order Form */
+
+.order-form {
+  padding: 0px 15px 15px 15px;
+}
+
+.order-form td {
+  padding: 0px 15px 15px 15px;
+}
+
+.order-form th {
+  padding: 15px 15px 0px 15px;
+  }
+
+/* Footer */
+
+footer {
+  position: bottom;
+  width: calc(100%);
+  height: 200px;
+  padding: 0px;
+  margin-top: 0px;
+  background-color: #EDEDED;
+  overflow: hidden;
+}
+
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+  font-size: 16px;
+  color: #fff;
+  line-height: 30px;
+}
