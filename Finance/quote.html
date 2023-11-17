@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h3>Get a quote</h3>
+    <form action="/quote" method="post">
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Enter stock symbol" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Get Quote</button>
+</form><br>
+
+{% if quote %}
+    <h4>Stock: {{ quote["name"] }} ({{ quote["symbol"] }})</h4>
+    <h5>Current stock price: {{ quote["price"] | usd }} per share.</h5>
+{% endif %}
+
+{% endblock %}

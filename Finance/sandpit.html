@@ -1,0 +1,30 @@
+SELL select menu not working
+<div class="mb-3">
+<label for="symbol">Select a Stock:</label>
+<select class="form-select mx-auto w-auto" name="symbol">
+    <option disabled="" selected="">Symbol</option>
+</select>
+{% for symbol in symbols %}
+    <option value="{{ symbol }}">{{ symbol }}</option>
+{% endfor %}
+</div>
+
+
+DEPOSIT page almost working
+@app.route("/deposit", methods=["GET", "POST"])
+@login_required
+def deposit():
+    """Sell shares of stock"""
+    cash = db.execute("SELECT cash FROM users WHERE id = :user_id", user_id=session["user_id"])[0]["cash"]
+
+    if request.method == "POST":
+        global deposit
+        deposit = request.form.get("deposit")
+        if int(deposit) <= 0:
+            return apology("Enter a valid amount", 403)
+        else:
+            deposit = deposit
+
+        # db.execute("INSERT INTO transactions (user_id, deposit) VALUES (:user_id, :deposit)", deposit=deposit, user_id=session["user_id"])
+
+    return render_template("deposit.html", cash=int(cash), deposit=deposit)
